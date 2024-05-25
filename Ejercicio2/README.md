@@ -1,4 +1,4 @@
-## Programa 2 .- Ordena y busca
+## Programa 2.- Ordena y busca
 
 
 Dado un listado de números, muestra los números faltantes para completar la secuencia:
