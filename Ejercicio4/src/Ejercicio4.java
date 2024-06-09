@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Ejercicio4 {
     public static void main(String[] args) throws Exception {
 
+        Scanner scanner = new Scanner(System.in);
         int continuar = 1;
 
         List<String> nombres = new ArrayList<>();
@@ -19,23 +20,19 @@ public class Ejercicio4 {
         int sustos = 0;
         int dulces = 0;
 
-        
-        Scanner scanner = new Scanner(System.in);
-
-        
         try{
             while (continuar == 1) {
-                System.out.println("Nombre de la niña o niño:");
+                System.out.println("- Nombre de la niña o niño:");
                 nombres.add(scanner.next());
-                System.out.println("Edad:");
+                System.out.println("- Edad:");
                 edades.add(scanner.nextInt());
-                System.out.println("Altura en centímetros:");
+                System.out.println("- Altura en centímetros:");
                 alturas.add(scanner.nextInt());
-                System.out.println("¿Otro niña o niño? (1 para 'Sí', 0 para 'No')");
+                System.out.println("- ¿Otro niña o niño? (1 para 'Sí', 0 para 'No')");
                 continuar = scanner.nextInt();
             }
 
-            System.out.println("¿Truco o Trato?");
+            System.out.println("- ¿Truco o Trato?");
             trucoTrato = scanner.next();
 
             if(trucoTrato.equals("Truco")){
